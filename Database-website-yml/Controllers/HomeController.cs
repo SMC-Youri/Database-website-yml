@@ -18,7 +18,8 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [Route("Films")]
+        public IActionResult Films()
         {
             return View();
         }
