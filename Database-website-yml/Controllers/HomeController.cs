@@ -1,6 +1,7 @@
 ﻿using Database_website_yml.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using MySql.Data;
 
 namespace Database_website_yml.Controllers
 {
