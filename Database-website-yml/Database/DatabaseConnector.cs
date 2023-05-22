@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿ using MySql.Data.MySqlClient;
 
 namespace Database_website_yml.Controllers
 {
@@ -16,7 +16,8 @@ namespace Database_website_yml.Controllers
 
 
             // verbinding maken met de database
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            // ****************************** NIET WEGHALEN ******************************
+          /*  using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 // verbinding openen
                 conn.Open();
@@ -43,7 +44,7 @@ namespace Database_website_yml.Controllers
                         rows.Add(row);
                     }
                 }
-            }
+      -->      }   */
 
             // return de lijst met namen
             return rows;
