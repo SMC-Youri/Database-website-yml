@@ -38,10 +38,16 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        [Route("Contact")]
+       
         public IActionResult Contact()
         {
             return View();
+        }
+  
+        [HttpPost]
+        public IActionResult Contact(Person person)
+        {
+            return View(person);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
