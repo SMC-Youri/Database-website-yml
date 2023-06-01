@@ -5,10 +5,13 @@
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
-    Firstname: <input type="text" name="firstname" />
-    Lastname: <input type="text" name="lastname" />
+    <div>Firstname: <input type="text" name="firstname" /></div>
+    <div>Lastname: <input type="text" name="lastname" /></div>
+    <div>E-mail: <input type="text" name="email" /></div>
+    <div>Telefoon: <input type="text" name="phone" /></div>
+    <div>Adres: <input type="text" name="address" /></div>
     <input type="submit" value="opslaan" />
 </form>
 @if(Model!= null){
-<p>Hoi, @ViewData["firstname"] @ViewData["lastname"]</p>
+<p>Hoi, @Model.firstname @Model.lastname</p>
 }
