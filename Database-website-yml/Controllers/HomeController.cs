@@ -38,7 +38,12 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-       
+        [Route("Succes")]
+        public IActionResult Succes()
+        {
+            return View();
+        }
+
         public IActionResult Contact()
         {
             return View();
