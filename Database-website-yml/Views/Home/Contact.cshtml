@@ -12,7 +12,11 @@
     <div>E-mail: <input type="text" name="email" /></div>
     @Html.ValidationMessageFor(m => m.email)
     <div>Telefoon: <input type="text" name="phone" /></div>
+    @Html.ValidationMessageFor(m => m.phone)
     <div>Adres: <input type="text" name="address" /></div>
+    @Html.ValidationMessageFor(m => m.address)
+    <div>Bericht: <input type="text" name="message" /></div>
+    @Html.ValidationMessageFor(m => m.message)
     <input type="submit" value="opslaan" />
 </form>
 @if(Model!= null){
