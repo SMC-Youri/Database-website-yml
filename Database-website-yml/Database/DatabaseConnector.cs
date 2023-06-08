@@ -44,7 +44,7 @@ namespace Database_website_yml.Controllers
                         rows.Add(row);
                     }
                 }
-      -->      }   */
+            }   
 
             // return de lijst met namen
             return rows;
