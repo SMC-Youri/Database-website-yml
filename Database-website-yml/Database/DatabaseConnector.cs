@@ -17,34 +17,34 @@ namespace Database_website_yml.Controllers
 
             // verbinding maken met de database
             // ****************************** NIET WEGHALEN ******************************
-          /*  using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                // verbinding openen
-                conn.Open();
+            /*  using (MySqlConnection conn = new MySqlConnection(connectionString))
+              {
+                  // verbinding openen
+                  conn.Open();
 
-                // SQL query die we willen uitvoeren
-                MySqlCommand cmd = new MySqlCommand(query, conn);
+                  // SQL query die we willen uitvoeren
+                  MySqlCommand cmd = new MySqlCommand(query, conn);
 
-                // resultaat van de query lezen
-                using (var reader = cmd.ExecuteReader())
-                {
-                    var tableData = reader.GetSchemaTable();
+                  // resultaat van de query lezen
+                  using (var reader = cmd.ExecuteReader())
+                  {
+                      var tableData = reader.GetSchemaTable();
 
-                    // elke keer een regel (of eigenlijk: database rij) lezen
-                    while (reader.Read())
-                    {
-                        var row = new Dictionary<string, object>();
+                      // elke keer een regel (of eigenlijk: database rij) lezen
+                      while (reader.Read())
+                      {
+                          var row = new Dictionary<string, object>();
 
-                        // haal voor elke kolom de waarde op en voeg deze toe
-                        for (int i = 0; i < reader.FieldCount; i++)
-                        {
-                            row[reader.GetName(i)] = reader.GetValue(i);
-                        }
+                          // haal voor elke kolom de waarde op en voeg deze toe
+                          for (int i = 0; i < reader.FieldCount; i++)
+                          {
+                              row[reader.GetName(i)] = reader.GetValue(i);
+                          }
 
-                        rows.Add(row);
-                    }
-                }
-            }   
+                          rows.Add(row);
+                      }
+                  }
+      -->      }   */
 
             // return de lijst met namen
             return rows;
