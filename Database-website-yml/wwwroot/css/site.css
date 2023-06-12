@@ -46,9 +46,9 @@ body {
     margin-left: 10px;
 }
 
-.footer-text {
+.header-text {
     text-align: center;
-    color: #E6E6E6;
+    color: #1A1A1A;
 }
 
 .film-pagina-titel{
@@ -112,4 +112,28 @@ body {
     text-align: center;
     width: 16%;
     color: #E6E6E6;
+}
+
+.map {
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+}
+
+.follow {
+    text-align: center;
+    width: 33.33%;
+    color: #1A1A1A;
+}
+
+.offer-text {
+    text-align: center;
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+}
+
+.offer {
+    text-align: center;
+    width: 33.33%;
+    color: #E6E6E6;
+    background-color: #1A1A1A;
 }
