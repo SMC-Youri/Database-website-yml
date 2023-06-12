@@ -3,8 +3,11 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<div class="detail-name">@Model.name</div>
-<div class="detail-image">@Model.image</div>
+<div class="detail-name"><h1>@Model.name</h1></div>
+<div style="text-align: center"><img src="@Model.image" alt="detail-image" width=637 height=950 style="border: 5px solid #1A1A1A" /></div>
+<div class="detail-age"><img src="@Model.age" width=100 height=100 /></div>
 <div class="detail-description">@Model.description</div>
-
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="detail-trailer" style="text-align: center">
+    <h1>Bekijk de trailer</h1>
+    <iframe src="@Model.trailer" width="480" height="270" style="border: 5px solid #E6E6E6"> 
+ </div>

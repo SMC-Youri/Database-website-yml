@@ -51,32 +51,58 @@ body {
     color: #E6E6E6;
 }
 
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
+.film-pagina-titel{
+    text-align: center;
 }
 
-    .socials li {
-        margin: 0 10px;
-    }
+.mainImage {
+    border: 5px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-    .socials a {
-        text-decoration: none;
-        color: #fff;
-        border: 1.1px solid white;
-        padding: 5px;
-        border-radius: 50%;
-    }
+.detail-name {
+    text-align: center;
+}
 
-        .socials a i {
-            font-size: 1.1rem;
-            width: 20px;
-            transition: color .4s ease;
-        }
+.detail-trailer {
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+}
 
-        .socials a:hover i {
-            color: aqua;
-        }
+.detail-age {
+    float: left;
+}
+
+.detail-description {
+    color: #1A1A1A;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.column2 {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background-color: #1A1A1A;
+}
+
+.soon {
+    text-align: center;
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
