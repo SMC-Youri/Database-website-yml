@@ -1,6 +1,6 @@
 html {
     font-size: 14px;
-    background-color: cornflowerblue
+    background-color: #804200;
 }
 
 @media (min-width: 768px) {
@@ -105,4 +105,11 @@ body {
     content: "";
     clear: both;
     display: table;
+}
+
+
+.footerX {
+    text-align: center;
+    width: 16%;
+    color: #E6E6E6;
 }
