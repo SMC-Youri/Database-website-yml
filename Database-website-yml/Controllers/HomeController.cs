@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 
+
 namespace Database_website_yml.Controllers
 {
     public class HomeController : Controller
     {
         private Dictionary<string, Film> database = new Dictionary<string, Film>()
         {
-            { "avatar", new Film("avatar", "dhee", 12) }
+            { "avatar", new Film("avatar","img/1", "dhee", 12) }
         };
 
         private readonly ILogger<HomeController> _logger;
