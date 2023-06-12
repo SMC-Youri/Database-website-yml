@@ -17,7 +17,8 @@ namespace Database_website_yml.Controllers
 
             // verbinding maken met de database
             // ****************************** NIET WEGHALEN ******************************
-            /*  using (MySqlConnection conn = new MySqlConnection(connectionString))
+            /*
+              using (MySqlConnection conn = new MySqlConnection(connectionString))
               {
                   // verbinding openen
                   conn.Open();
@@ -44,7 +45,7 @@ namespace Database_website_yml.Controllers
                           rows.Add(row);
                       }
                   }
-      -->      }   */
+            }   */
 
             // return de lijst met namen
             return rows;

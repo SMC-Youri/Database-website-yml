@@ -7,6 +7,11 @@ namespace Database_website_yml.Controllers
 {
     public class HomeController : Controller
     {
+        private Dictionary<string, Film> database = new Dictionary<string, Film>()
+        {
+            { "avatar", new Film("avatar", "dhee", 12) }
+        };
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -48,7 +53,13 @@ namespace Database_website_yml.Controllers
         {
             return View();
         }
-  
+
+        [Route("Detail")]
+        public IActionResult Detail(string filmName)
+        {
+            return View(database[filmName]);
+        }
+
         [HttpPost]
         public IActionResult Contact(Person person)
         {

@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Database_website_yml.Models
 {
+
     public class Person
     {
         [Required(ErrorMessage = "Gelieve uw voornaam in te vullen.")]
