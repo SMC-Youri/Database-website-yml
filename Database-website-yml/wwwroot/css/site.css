@@ -221,3 +221,36 @@ body {
 .detail-image {
     text-align: center;
 }
+
+.detail-big-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.big-trailer {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.yt {
+    position: relative;
+    display: block;
+    width: 100%; /* width of iframe wrapper */
+    height: 0;
+    margin: auto;
+    padding: 0% 0% 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
+
+    .yt iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
