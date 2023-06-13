@@ -34,20 +34,7 @@ namespace Database_website_yml.Controllers
 
         public IActionResult Index()
         {
-            // alle producten ophalen
-            var rows = DatabaseConnector.GetRows("select * from acteur");
-
-            // lijst maken om alle namen in te stoppen
-            List<string> names = new List<string>();
-
-            foreach (var row in rows)
-            {
-                // elke naam toevoegen aan de lijst met namen
-                names.Add(row["naam"].ToString());
-            }
-
-            // de lijst met namen in de html stoppen
-            return View(names);
+            return View();
         }
 
         [Route("Films")]
