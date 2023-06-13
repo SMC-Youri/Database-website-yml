@@ -1,22 +1,51 @@
-﻿@model List<string>
+﻿</div>
+@model List<string>
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1>Nu te zien bij Argus: Ted Lasso!</h1>
-    <a href=" Detail?filmName=Ted Lasso"><img class="mainImage" src="https://m.media-amazon.com/images/I/71UtXuw8XcL._AC_UF894,1000_QL80_.jpg" alt="mainImage"></a>
+<div class="header-text">
+    <h1>Welkom bij Argus!</h1>
+</div>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+        <a href=" Detail?filmName=Ted Lasso"><img src="https://e1.pxfuel.com/desktop-wallpaper/544/28/desktop-wallpaper-ted-lasso-has-been-renewed-for-a-second-season-at-apple-tv-ted-lasso.jpg" style="width:100%; border: 5px solid #1A1A1A;"></a>
+    <div class="text">Ted Lasso</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+        <a href=" Detail?filmName=Back to the future"><img src="https://images.hdqwalls.com/wallpapers/back-to-the-future-wc.jpg" style="width:100%; border: 5px solid #1A1A1A;"></a>
+    <div class="text">Back to the future</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+        <a href=" Detail?filmName=Jason Bourne"><img src="https://images5.alphacoders.com/795/thumb-1920-795848.jpg" style="width:100%; border: 5px solid #1A1A1A;"></a>
+    <div class="text">Jason Bourne</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 <br>
 <div class="map" style="text-align: center">
     <h1>Waar is Argus te vinden?</h1>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.2872668327855!2d4.326913556711791!3d52.03808075499654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b68f8d02f25b%3A0x41736de580487040!2sVolmerlaan%207C%2C%202288%20GC%20Rijswijk!5e0!3m2!1sen!2snl!4v1686603293704!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.2872668327855!2d4.326913556711791!3d52.03808075499654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b68f8d02f25b%3A0x41736de580487040!2sVolmerlaan%207C%2C%202288%20GC%20Rijswijk!5e0!3m2!1sen!2snl!4v1686603293704!5m2!1sen!2snl" width="600" height="450" style="border: 5px solid #E6E6E6;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <h3>Gelegen aan de Volmerlaan, is ARGUS gemakkelijk te bereiken met bus, tram of fiets. De bezoekers die met auto komen kunnen deze tegenover onze bioscoop parkeren in de parkeergarage boven Bally’s Bar, Grill & Bowling.</h3>
     <br>
 </div>
 
 <div class="row">
-    <div class="header-text"><h1>Volg Argus ook online!</h1></div>
+    <div class="follow-text"><h1>Volg Argus ook online!</h1></div>
     <div class="follow">
         <h5>Volg onze Instagram</h5>
         <a href="https://www.instagram.com/sint_maartenscollege/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width=100 height=100 /></a>
@@ -29,21 +58,22 @@
         <h5>Volg ons op Facebook</h5>
         <a href="https://www.facebook.com/sintmaartenscollegevoorburg/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook" width=100 height=100 /></a>
     </div>
+    <br />
 </div>
-<br />
 <div class="row">
     <div class="offer-text"><h1>Wat bieden wij?</h1></div>
     <div class="offer">
         <h5>Gigantische IMAX schermen!</h5>
-        <a href="https://www.imax.com/"><img src="https://media.pathe.nl/gfx_content//concept-page/imaxrotterdam2.jpg" alt="IMAX 3D" width=400 height=300 /></a>
+        <a href="https://www.imax.com/"><img src="https://media.pathe.nl/gfx_content//concept-page/imaxrotterdam2.jpg" alt="IMAX 3D" width=400 height=300 style="border: 5px solid #E6E6E6;" /></a>
     </div>
     <div class="offer">
         <h5>Een geweldige 4DX ervaring!</h5>
-        <a href="https://www.pathe.nl/4dx"><img src="https://media.pathe.nl/gfx_content//1still/4dxconceptstill1.jpg" alt="4DX" width=400 height=300 /></a>
+        <a href="https://www.pathe.nl/4dx"><img src="https://media.pathe.nl/gfx_content//1still/4dxconceptstill1.jpg" alt="4DX" width=400 height=300 style="border: 5px solid #E6E6E6;" /></a>
     </div>
     <div class="offer">
         <h5>Lekker languit liggen in onze relax seats!</h5>
-        <a href="https://www.pathe.nl/relaxseats"><img src="https://storage.pubble.nl/96897487/content/2023/2/d686c98c-7d42-47ec-b580-c9cf60b9b651_thumb1440.jpg" alt="Relax seats" width=400 height=300 /></a>
+        <a href="https://www.pathe.nl/relaxseats"><img src="https://storage.pubble.nl/96897487/content/2023/2/d686c98c-7d42-47ec-b580-c9cf60b9b651_thumb1440.jpg" alt="Relax seats" width=400 height=300 style="border: 5px solid #E6E6E6;" /></a>
         <br><br>
     </div>
 </div>
+<div>
