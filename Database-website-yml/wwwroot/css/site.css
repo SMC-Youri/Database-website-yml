@@ -217,3 +217,7 @@ body {
 .active, .dot:hover {
     background-color: #717171;
 }
+
+.detail-image {
+    text-align: center;
+}
