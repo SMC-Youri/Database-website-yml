@@ -91,11 +91,26 @@ body {
 }
 
 .column2 {
+    text-align: center;
     float: left;
     width: 20%;
     padding: 5px;
     background-color: #1A1A1A;
 }
+
+.column3 {
+    text-align: center;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    color: #1A1A1A;
+}
+
+.cast-crew{
+    text-align: center;
+    color: #1A1A1A;
+}
+
 
 .soon {
     text-align: center;
