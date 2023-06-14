@@ -22,18 +22,29 @@ footer {
     background: #804200;
 }
 
+.selected {
+    background-color: green;
+    border-radius: 25px;
+}
+
 .nav-item:hover {
     background-color: #BDC6F5;
     border-radius: 25px;
 }
 
-.nav-link.active{
-    background-color: green;
+.nav-item{
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: TOMMY;
+    src: url('Azonix.otf');
 }
 
 body {
     margin-bottom: 60px;
     background-color: #E66700;
+    font-family: TOMMY;
 }
 
 .contactform label {
