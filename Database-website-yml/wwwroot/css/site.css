@@ -23,7 +23,7 @@ footer {
 }
 
 .selected {
-    background-color: green;
+    background-color: #BDC6F5;
     border-radius: 25px;
 }
 
@@ -32,19 +32,24 @@ footer {
     border-radius: 25px;
 }
 
-.nav-item{
+.nav-item {
     font-size: 25px;
 }
 
 @font-face {
-    font-family: TOMMY;
-    src: url('Azonix.otf');
+    font-family: FILM;
+    src: url('ACFilmstrip.otf');
+}
+
+@font-face {
+    font-family: FONT;
+    src: url('Blockletter.otf');
 }
 
 body {
     margin-bottom: 60px;
     background-color: #E66700;
-    font-family: TOMMY;
+    font-family: FONT;
 }
 
 .contactform label {
@@ -60,27 +65,23 @@ body {
 .header-text {
     text-align: center;
     color: #1A1A1A;
+    font-family: FILM;
 }
 
-.film-pagina-titel{
+.film-pagina-titel {
     text-align: center;
-}
-
-.mainImage {
-    border: 5px solid #000;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    font-family: FILM;
 }
 
 .detail-name {
     text-align: center;
+    font-family: FILM;
 }
 
 .detail-trailer {
     color: #E6E6E6;
     background-color: #1A1A1A;
+    font-family: FILM;
 }
 
 .detail-age {
@@ -120,6 +121,7 @@ body {
 .cast-crew{
     text-align: center;
     color: #1A1A1A;
+    font-family: FILM;
 }
 
 
@@ -127,6 +129,7 @@ body {
     text-align: center;
     color: #E6E6E6;
     background-color: #1A1A1A;
+    font-family: FILM;
 }
 
 .row::after {
@@ -147,6 +150,12 @@ body {
     background-color: #1A1A1A;
 }
 
+.find-text {
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+    font-family: FILM;
+}
+
 .follow {
     text-align: center;
     width: 33.33%;
@@ -157,6 +166,7 @@ body {
     text-align: center;
     color: #1A1A1A;
     background-color: #E6E6E6;
+    font-family: FILM;
 }
 
 
@@ -164,6 +174,7 @@ body {
     text-align: center;
     color: #E6E6E6;
     background-color: #1A1A1A;
+    font-family: FILM;
 }
 
 .offer {
@@ -264,19 +275,23 @@ body {
 .yt {
     position: relative;
     display: block;
-    width: 100%; /* width of iframe wrapper */
+    width: 100%;
     height: 0;
     margin: auto;
-    padding: 0% 0% 56.25%; /* 16:9 ratio */
+    padding: 0% 0% 56.25%;
     overflow: hidden;
 }
 
-    .yt iframe {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
+.yt iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-text{
+    font-family: FILM;
+}
