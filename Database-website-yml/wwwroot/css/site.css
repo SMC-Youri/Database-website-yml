@@ -58,7 +58,7 @@ body {
 }
 
 .contactform .field-validation-error {
-    color: red;
+    color: #BDC6F5;
     margin-left: 10px;
 }
 
