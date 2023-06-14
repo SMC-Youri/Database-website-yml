@@ -44,6 +44,12 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
+        [Route("Ticket")]
+        public IActionResult Ticket()
+        {
+            return View();
+        }
+
         [Route("Succes")]
         public IActionResult Succes()
         {
