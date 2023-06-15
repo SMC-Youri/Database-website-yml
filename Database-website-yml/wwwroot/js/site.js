@@ -28,3 +28,9 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+$(document).ready(function () {
+    $("#form_submit").submit(function () {
+        document.getElementById('download_image').click();
+    });
+});

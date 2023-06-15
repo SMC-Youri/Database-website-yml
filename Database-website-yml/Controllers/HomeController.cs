@@ -44,7 +44,6 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        [Route("Ticket")]
         public IActionResult Ticket()
         {
             return View();
@@ -56,15 +55,15 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            return View();
-        }
-
         [Route("Detail")]
         public IActionResult Detail(string filmName)
         {
             return View(database[filmName]);
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
         }
 
         [HttpPost]
