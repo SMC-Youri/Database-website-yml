@@ -6,37 +6,47 @@
 
 <form method="post" class="contactform">
     <div class="form-group">
-        @Html.LabelFor(m => m.voornaam)
-        @Html.TextBoxFor(m => m.voornaam)
-        @Html.ValidationMessageFor(m => m.voornaam)
+        Voornaam: <input type="text" name="FIRSTNAME" />
+        @Html.ValidationMessageFor(m => m.FIRSTNAME)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.achternaam)
-        @Html.TextBoxFor(m => m.achternaam)
-        @Html.ValidationMessageFor(m => m.achternaam)
+        Achternaam: <input type="text" name="LASTNAME" />
+        @Html.ValidationMessageFor(m => m.LASTNAME)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.mailtje)
-        @Html.TextBoxFor(m => m.mailtje)
-        @Html.ValidationMessageFor(m => m.mailtje)
+        E-mail: <input type="text" name="EMAIL" />
+        @Html.ValidationMessageFor(m => m.EMAIL)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.telefoon)
-        @Html.TextBoxFor(m => m.telefoon)
-        @Html.ValidationMessageFor(m => m.telefoon)
+        Datum: <input type="date" name="DATE" />
+        @Html.ValidationMessageFor(m => m.DATE)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.adres)
-        @Html.TextBoxFor(m => m.adres)
-        @Html.ValidationMessageFor(m => m.adres)
+        Tijd: <input type="time" name="TIME" />
+        @Html.ValidationMessageFor(m => m.TIME)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.bericht)
-        @Html.TextBoxFor(m => m.bericht)
-        @Html.ValidationMessageFor(m => m.bericht)
+        Film: <select id="cars" name="MOVIE">
+                <option value="https://m.media-amazon.com/images/I/71UtXuw8XcL._AC_UF894,1000_QL80_.jpg">Ted Lasso</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+        @Html.ValidationMessageFor(m => m.MOVIE)
     </div>
-      <a download="Argus-ticket.jpg" href="/path/to/image" title="ImageName" id="download_image">
-        <input class="contact-button" type="button" value="Bestellen" alt="ImageName" src="/path/to/image">
-      </a>
+    <input class="contact-button" type="submit" value="bestellen" />
   </form>
+<br>
+
+<div style="text-align:center">
+    <h1>Argus filmticket</h1>
+    <h2>@ViewData["FIRSTNAME"] @ViewData["LASTNAME"]</h2>
+    <h2>@ViewData["EMAIL"]</h2>
+    <h2>@ViewData["DATE"] @ViewData["TIME"]</h2>
+    <img src="@ViewData["MOVIE"]" class="order-image"/>
+    <br><br>
+    <a download="Argus-ticket.jpg" href="/path/to/image" title="ImageName" id="download_image">
+        <input class="contact-button" type="button" value="Bestellen" alt="ImageName" src="/path/to/image">
+    </a>
+</div>
 <br>

@@ -44,8 +44,14 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        public IActionResult Ticket()
+        public IActionResult Ticket(string FIRSTNAME, string LASTNAME, string EMAIL, string TIME, string MOVIE, string DATE)
         {
+            ViewData["FIRSTNAME"] = FIRSTNAME;
+            ViewData["LASTNAME"] = LASTNAME;
+            ViewData["EMAIL"] = EMAIL;
+            ViewData["TIME"] = TIME;
+            ViewData["MOVIE"] = MOVIE;
+            ViewData["DATE"] = DATE;
             return View();
         }
 

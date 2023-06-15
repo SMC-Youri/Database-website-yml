@@ -309,3 +309,7 @@ body {
     background-color: #BDC6F5;
     border-radius: 25px;
 }
+
+.order-image {
+    width: 20%;
+}
