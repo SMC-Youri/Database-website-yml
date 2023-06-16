@@ -5,25 +5,17 @@ namespace Database_website_yml.Models
 
     public class Order
     {
-        [Required(ErrorMessage = "Gelieve uw voornaam in te vullen.")]
-        [Display(Name = "Voornaam:")]
+        [Required]
         public string FIRSTNAME { get; set; }
-        [Required(ErrorMessage = "Gelieve uw achternaam in te vullen.")]
-        [Display(Name = "Achternaam:")]
+        [Required]
         public string LASTNAME { get; set; }
-        [EmailAddress(ErrorMessage = "Geen geldig Emailadres.")]
-        [Required(ErrorMessage = "Gelieve uw emailadres in te vullen")]
-        [Display(Name = "E-mail:")]
+        [Required]
         public string EMAIL { get; set; }
-        [Phone(ErrorMessage = "Geen geldig telefoonnummer")]
-        [Required(ErrorMessage = "Gelieve uw telefoonnummer in te vullen")]
-        [Display(Name = "Telefoon:")]
+        [Required]
         public string TIME { get; set; }
-        [Required(ErrorMessage = "Gelieve uw adres in te vullen")]
-        [Display(Name = "Film:")]
+        [Required]
         public string MOVIE { get; set; }
-        [Required(ErrorMessage = "Gelieve een bericht achter te laten")]
-        [Display(Name = "Bericht:")]
+        [Required]
         public string DATE { get; set; }
     }
 }

@@ -4,49 +4,84 @@
 }
 <div class="contact-text"><h1>@ViewData["Title"]</h1></div>
 
-<form method="post" class="contactform">
+<form method="post" class="ticketorder">
     <div class="form-group">
-        Voornaam: <input type="text" name="FIRSTNAME" />
-        @Html.ValidationMessageFor(m => m.FIRSTNAME)
+        Voornaam:<br /><input type="text" name="FIRSTNAME" />
     </div>
     <div class="form-group">
-        Achternaam: <input type="text" name="LASTNAME" />
-        @Html.ValidationMessageFor(m => m.LASTNAME)
+        Achternaam:<br /><input type="text" name="LASTNAME" />
     </div>
     <div class="form-group">
-        E-mail: <input type="text" name="EMAIL" />
-        @Html.ValidationMessageFor(m => m.EMAIL)
+        E-mail:<br /><input type="text" name="EMAIL" />
     </div>
     <div class="form-group">
-        Datum: <input type="date" name="DATE" />
-        @Html.ValidationMessageFor(m => m.DATE)
+        Datum:<br /><input type="date" name="DATE" />
     </div>
     <div class="form-group">
-        Tijd: <input type="time" name="TIME" />
-        @Html.ValidationMessageFor(m => m.TIME)
+        Tijd:<br /><input type="time" name="TIME" />
     </div>
     <div class="form-group">
-        Film: <select id="cars" name="MOVIE">
+        Film:<br /><select id="movies" name="MOVIE">
                 <option value="https://m.media-amazon.com/images/I/71UtXuw8XcL._AC_UF894,1000_QL80_.jpg">Ted Lasso</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+            <option value="https://www.gamereactor.nl/media/81/supermariobros_3958163b.jpg">Super Mario Movie</option>
+            <option value="https://media.s-bol.com/Y19wKYPXgX0/550x824.jpg">Back to the future</option>
+            <option value="https://i.pinimg.com/originals/7a/73/6d/7a736d1cd4bc02005c6381eefc34c1e1.jpg">The hangover</option>
+            <option value="https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810">Avengers Endgame</option>
+            <option value="https://deadline.com/wp-content/uploads/2023/04/barbie-BARBIE_VERT_TSR_W_TALENT_2764x4096_DOM_rgb.jpg?w=800">Barbie</option>
+            <option value="https://static.posters.cz/image/1300/posters/the-batman-2022-i122127.jpg">The Batman</option>
+            <option value="https://static.tvtropes.org/pmwiki/pub/images/jasonbourne_7.jpg">Jason Bourne</option>
+            <option value="https://assets-prd.ignimgs.com/2022/01/13/uncharted-poster-full-1642086040683.jpg">Uncharted</option>
+            <option value="https://www.themoviedb.org/t/p/original/sbSEzrkW9ej8VvOtSVCvimt24CE.jpg">Ready Player One</option>
               </select>
-        @Html.ValidationMessageFor(m => m.MOVIE)
     </div>
+    <br />
     <input class="contact-button" type="submit" value="bestellen" />
+    <br>
+    <h5>klik na het bestellen op de knop hieronder voor een unieke entreecode.</h5>
+    <input class="contact-button" type="button" value="Entreecode" onclick='getNumber();' />
   </form>
 <br>
 
 <div style="text-align:center">
-    <h1>Argus filmticket</h1>
+    <div class="container" id='container'>
+    <h1>Argus entree filmticket</h1>
     <h2>@ViewData["FIRSTNAME"] @ViewData["LASTNAME"]</h2>
     <h2>@ViewData["EMAIL"]</h2>
     <h2>@ViewData["DATE"] @ViewData["TIME"]</h2>
-    <img src="@ViewData["MOVIE"]" class="order-image"/>
+        <h2>Eenmalige entreecode:<div id="myNumber"></div></h2>
+    </div>
+    <img src="@ViewData["MOVIE"]" class="order-image" style="border: 5px solid #1A1A1A;"/>
     <br><br>
-    <a download="Argus-ticket.jpg" href="/path/to/image" title="ImageName" id="download_image">
-        <input class="contact-button" type="button" value="Bestellen" alt="ImageName" src="/path/to/image">
-    </a>
+    <h5>Download de ticket hieronder</h5>
+    <input class="contact-button" type="button" id='but_screenshot' value="Download" onclick='screenshot();'>
 </div>
 <br>
+
+
+    <script type="text/javascript">
+        var link = document.getElementById('getNumber'); // Gets the link
+        link.onclick = capture(getNumber); // Runs the function on click
+
+        function getNumber() {
+            var minNumber = 1000000; // The minimum number you want
+            var maxNumber = 10000000; // The maximum number you want
+            var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
+            $('#myNumber').html(randomnumber); // Sets content of <div> to number
+            return false; // Returns false just to tidy everything up
+        }
+   </script>
+
+    <script type='text/javascript'>
+        function screenshot() {
+            html2canvas(container).then(function (canvas) {
+                document.body.appendChild(canvas);
+            });
+        }
+    </script>
+
+    <script type='text/javascript'>
+        function displayText() {
+        var text = document.getElementById("textField");
+        text.style.display = "block";
+    }
+    </script>

@@ -62,6 +62,14 @@ body {
     margin-left: 10px;
 }
 
+.ticketorder input[type=text], input[type=date], input[type=time] {
+    width: 15%;
+}
+
+.ticketorder select {
+    width: 15%;
+}
+
 .header-text {
     text-align: center;
     color: #1A1A1A;
