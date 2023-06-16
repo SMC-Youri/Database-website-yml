@@ -21,15 +21,20 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item @Html.ActiveClass("Home", "Index", "selected")">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item @Html.ActiveClass("Home,Films", "Films", "selected")">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Films">Films</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Films">Films</a>
                         </li>
                         <li class="nav-item @Html.ActiveClass("Home,Contact", "Contact", "selected")">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                     </ul>
+
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="dark mode">
+                        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)" /></svg>
+                    </button>
+
                 </div>
             </div>
         </nav>
@@ -77,6 +82,7 @@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/darkmode.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

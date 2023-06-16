@@ -1,6 +1,27 @@
+:root {
+    --clr-primary: #E67700;
+    --clr-secondary: #804200;
+    --clr-accent: #bdc6f5;
+    --clr-1: #e6e6e6;
+    --clr-2: #1a1a1a;
+
+    --foreground: var(--clr-primary);
+    --background: var(--clr-secondary);
+}
+
+.darkmode {
+    --clr-primary: #000000;
+    --clr-secondary: #141414;
+    --clr-accent: #282828;
+    --clr-1: #141414;
+    --clr-2: #804200;
+    --foreground: var(--clr-primary);
+    --background: var(--clr-secondary);
+}
+
 html {
     font-size: 14px;
-    background-color: #804200;
+    background-color: var(--background);
 }
 
 @media (min-width: 768px) {
@@ -15,25 +36,29 @@ html {
 }
 
 header {
-    background: #804200;
+    background: var(--background);
 }
 
 footer {
-    background: #804200;
+    background: var(--background);
 }
 
 .selected {
-    background-color: #BDC6F5;
+    background-color: var(--clr-accent);
     border-radius: 25px;
 }
 
 .nav-item:hover {
-    background-color: #BDC6F5;
+    background-color: var(--clr-accent);
     border-radius: 25px;
 }
 
 .nav-item {
     font-size: 25px;
+}
+
+.nav-link {
+    color: var(--clr-2);
 }
 
 @font-face {
@@ -48,8 +73,23 @@ footer {
 
 body {
     margin-bottom: 60px;
-    background-color: #E66700;
+    background-color: var(--foreground);
     font-family: FONT;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 .contactform label {
@@ -58,7 +98,7 @@ body {
 }
 
 .contactform .field-validation-error {
-    color: #BDC6F5;
+    color: var(--clr-accent);
     margin-left: 10px;
 }
 
@@ -72,7 +112,7 @@ body {
 
 .header-text {
     text-align: center;
-    color: #1A1A1A;
+    color: var(--clr-2);
     font-family: FILM;
 }
 
@@ -87,8 +127,8 @@ body {
 }
 
 .detail-trailer {
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
     font-family: FILM;
 }
 
@@ -98,7 +138,7 @@ body {
 }
 
 .detail-description {
-    color: #1A1A1A;
+    color: var(--clr-2);
     font-size: 20px;
     margin-left: 140px;
     margin-right: 50px;
@@ -115,7 +155,7 @@ body {
     float: left;
     width: 20%;
     padding: 5px;
-    background-color: #1A1A1A;
+    background-color: var(--clr-2);
 }
 
 .column3 {
@@ -123,20 +163,20 @@ body {
     float: left;
     width: 20%;
     padding: 5px;
-    color: #1A1A1A;
+    color: var(--clr-2);
 }
 
 .cast-crew{
     text-align: center;
-    color: #1A1A1A;
+    color: var(--clr-2);
     font-family: FILM;
 }
 
 
 .soon {
     text-align: center;
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
     font-family: FILM;
 }
 
@@ -150,46 +190,46 @@ body {
 .footerX {
     text-align: center;
     width: 16%;
-    color: #E6E6E6;
+    color: var(--clr-1);
 }
 
 .map {
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
 }
 
 .find-text {
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
     font-family: FILM;
 }
 
 .follow {
     text-align: center;
     width: 33.33%;
-    color: #1A1A1A;
-    background-color: #E6E6E6;
+    color: var(--clr-2);
+    background-color: var(--clr-1);
 }
 .follow-text {
     text-align: center;
-    color: #1A1A1A;
-    background-color: #E6E6E6;
+    color: var(--clr-2);
+    background-color: var(--clr-1);
     font-family: FILM;
 }
 
 
 .offer-text {
     text-align: center;
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
     font-family: FILM;
 }
 
 .offer {
     text-align: center;
     width: 33.33%;
-    color: #E6E6E6;
-    background-color: #1A1A1A;
+    color: var(--clr-1);
+    background-color: var(--clr-2);
 }
 
 * {
@@ -231,7 +271,7 @@ body {
 }
 
 .text {
-    color: #f2f2f2;
+    color: var(--clr-2);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -241,7 +281,7 @@ body {
 }
 
 .numbertext {
-    color: #f2f2f2;
+    color: var(--clr-2);
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -300,24 +340,29 @@ body {
     border: 0;
 }
 
-.contact-text{
+.contact-text {
     font-family: FILM;
+    color: var(--clr-2)
 }
 
 .ticket-button {
     font-size: 50px;
-    color: #1A1A1A;
-    background-color: #BDC6F5;
+    color: var(--clr-2);
+    background-color: var(--clr-accent);
     border-radius: 30px;
 }
 
 .contact-button {
     font-size: 20px;
-    color: #1A1A1A;
-    background-color: #BDC6F5;
+    color: var(--clr-2);
+    background-color: var(--clr-accent);
     border-radius: 25px;
 }
 
 .order-image {
     width: 20%;
+}
+
+.form-group {
+    color: var(--clr-2)
 }
