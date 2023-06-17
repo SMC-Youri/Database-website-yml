@@ -10,11 +10,12 @@
 }
 
 .darkmode {
-    --clr-primary: #000000;
-    --clr-secondary: #141414;
-    --clr-accent: #282828;
-    --clr-1: #141414;
-    --clr-2: #804200;
+    --clr-primary: #0d1117;
+    --clr-secondary: #804200;
+    --clr-accent: #f4d47c;
+    --clr-1: #21262d;
+    --clr-2: #89929b;
+
     --foreground: var(--clr-primary);
     --background: var(--clr-secondary);
 }
@@ -80,7 +81,7 @@ body {
 .dark-mode-toggle {
     position: absolute;
     z-index: 100;
-    top: 1em;
+    top: 40%;
     right: 1em;
     color: var(--foreground);
     border: 2px solid currentColor;
@@ -119,11 +120,13 @@ body {
 .film-pagina-titel {
     text-align: center;
     font-family: FILM;
+    color: var(--clr-2)
 }
 
 .detail-name {
     text-align: center;
     font-family: FILM;
+    color: var(--clr-2)
 }
 
 .detail-trailer {
