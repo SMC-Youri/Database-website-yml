@@ -22,7 +22,8 @@
     </div>
     <div class="form-group">
         Film:<br /><select id="movies" name="MOVIE">
-                <option value="https://m.media-amazon.com/images/I/71UtXuw8XcL._AC_UF894,1000_QL80_.jpg">Ted Lasso</option>
+            <option style="display:none;" selected="" disabled="" value="">Selecteer een film</option>
+            <option value="https://m.media-amazon.com/images/I/71UtXuw8XcL._AC_UF894,1000_QL80_.jpg">Ted Lasso</option>
             <option value="https://www.gamereactor.nl/media/81/supermariobros_3958163b.jpg">Super Mario Movie</option>
             <option value="https://media.s-bol.com/Y19wKYPXgX0/550x824.jpg">Back to the future</option>
             <option value="https://i.pinimg.com/originals/7a/73/6d/7a736d1cd4bc02005c6381eefc34c1e1.jpg">The hangover</option>
@@ -34,6 +35,371 @@
             <option value="https://www.themoviedb.org/t/p/original/sbSEzrkW9ej8VvOtSVCvimt24CE.jpg">Ready Player One</option>
               </select>
     </div>
+        Stoel:<br><select id="selectBox" name="SEAT" size="1" data-onchange="showimage()">
+        <option style="display:none;" selected="" disabled="" value="">Selecteer een stoel</option>
+        <option id="H15" value="H15">H15</option>
+        <option id="H14" value="H14">H14</option>
+        <option id="H13" value="H13">H13</option>
+        <option id="H12" value="H12">H12</option>
+        <option id="H11" value="H11">H11</option>
+        <option id="H10" value="H10">H10</option>
+        <option id="H9" value="H9">H9</option>
+        <option id="H8" value="H8">H8</option>
+        <option id="H7" value="H7">H7</option>
+        <option id="H6" value="H6">H6</option>
+        <option id="H5" value="H5">H5</option>
+        <option id="H4" value="H4">H4</option>
+        <option id="H3" value="H3">H3</option>
+        <option id="H2" value="H2">H2</option>
+        <option id="H1" value="H1">H1</option>
+        <option id="G14" value="G14">G14</option>
+        <option id="G13" value="G13">G13</option>
+        <option id="G12" value="G12">G12</option>
+        <option id="G11" value="G11">G11</option>
+        <option id="G10" value="G10">G10</option>
+        <option id="G9" value="G9">G9</option>
+        <option id="G8" value="G8">G8</option>
+        <option id="G7" value="G7">G7</option>
+        <option id="G6" value="G6">G6</option>
+        <option id="G5" value="G5">G5</option>
+        <option id="G4" value="G4">G4</option>
+        <option id="G3" value="G3">G3</option>
+        <option id="G2" value="G2">G2</option>
+        <option id="G1" value="G1">G1</option>
+        <option id="F14" value="F14">F14</option>
+        <option id="F13" value="F13">F13</option>
+        <option id="F12" value="F12">F12</option>
+        <option id="F11" value="F11">F11</option>
+        <option id="F10" value="F10">F10</option>
+        <option id="F9" value="F9">F9</option>
+        <option id="F8" value="F8">F8</option>
+        <option id="F7" value="F7">F7</option>
+        <option id="F6" value="F6">F6</option>
+        <option id="F5" value="F5">F5</option>
+        <option id="F4" value="F4">F4</option>
+        <option id="F3" value="F3">F3</option>
+        <option id="F2" value="F2">F2</option>
+        <option id="F1" value="F1">F1</option>
+        <option id="E14" value="E14">E14</option>
+        <option id="E13" value="E13">E13</option>
+        <option id="E12" value="E12">E12</option>
+        <option id="E11" value="E11">E11</option>
+        <option id="E10" value="E10">E10</option>
+        <option id="E9" value="E9">E9</option>
+        <option id="E8" value="E8">E8</option>
+        <option id="E7" value="E7">E7</option>
+        <option id="E6" value="E6">E6</option>
+        <option id="E5" value="E5">E5</option>
+        <option id="E4" value="E4">E4</option>
+        <option id="E3" value="E3">E3</option>
+        <option id="E2" value="E2">E2</option>
+        <option id="E1" value="E1">E1</option>
+        <option id="D14" value="D14">D14</option>
+        <option id="D13" value="D13">D13</option>
+        <option id="D12" value="D12">D12</option>
+        <option id="D11" value="D11">D11</option>
+        <option id="D10" value="D10">D10</option>
+        <option id="D9" value="D9">D9</option>
+        <option id="D8" value="D8">D8</option>
+        <option id="D7" value="D7">D7</option>
+        <option id="D6" value="D6">D6</option>
+        <option id="D5" value="D5">D5</option>
+        <option id="D4" value="D4">D4</option>
+        <option id="D3" value="D3">D3</option>
+        <option id="D2" value="D2">D2</option>
+        <option id="D1" value="D1">D1</option>
+        <option id="C14" value="C14">C14</option>
+        <option id="C13" value="C13">C13</option>
+        <option id="C12" value="C12">C12</option>
+        <option id="C11" value="C11">C11</option>
+        <option id="C10" value="C10">C10</option>
+        <option id="C9" value="C9">C9</option>
+        <option id="C8" value="C8">C8</option>
+        <option id="C7" value="C7">C7</option>
+        <option id="C6" value="C6">C6</option>
+        <option id="C5" value="C5">C5</option>
+        <option id="C4" value="C4">C4</option>
+        <option id="C3" value="C3">C3</option>
+        <option id="C2" value="C2">C2</option>
+        <option id="C1" value="C1">C1</option>
+        <option id="B14" value="B14">B14</option>
+        <option id="B13" value="B13">B13</option>
+        <option id="B12" value="B12">B12</option>
+        <option id="B11" value="B11">B11</option>
+        <option id="B10" value="B10">B10</option>
+        <option id="B9" value="B9">B9</option>
+        <option id="B8" value="B8">B8</option>
+        <option id="B7" value="B7">B7</option>
+        <option id="B6" value="B6">B6</option>
+        <option id="B5" value="B5">B5</option>
+        <option id="B4" value="B4">B4</option>
+        <option id="B3" value="B3">B3</option>
+        <option id="B2" value="B2">B2</option>
+        <option id="B1" value="B1">B1</option>
+        <option id="A12" value="A12">A12</option>
+        <option id="A11" value="A11">A11</option>
+        <option id="A10" value="A10">A10</option>
+        <option id="A9" value="A9">A9</option>
+        <option id="A8" value="A8">A8</option>
+        <option id="A7" value="A7">A7</option>
+        <option id="A6" value="A6">A6</option>
+        <option id="A5" value="A5">A5</option>
+        <option id="A4" value="A4">A4</option>
+        <option id="A3" value="A3">A3</option>
+        <option id="A2" value="A2">A2</option>
+    </select>
+    <br>
+    <img class="Imap" src="https://plymouthartscinema.org/wp-content/uploads/2021/09/Access-seating-plan-Sep-2021-1000x752.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area id="H15" data-href="javascript:setSelectValue('H15');" href="" alt="H15" title="H15" coords="133,129,82,79" shape="rect" />
+        <area id="H14" data-href="javascript:setSelectValue('H14');" href="" alt="H14" title="H14" coords="187,127,138,78" shape="rect" />
+        <area id="H13" data-href="javascript:setSelectValue('H13');" href="" alt="H13" title="H13" coords="251,128,202,79" shape="rect" />
+        <area id="H12" data-href="javascript:setSelectValue('H12');" href="" alt="H12" title="H12" coords="317,127,268,78" shape="rect" />
+        <area id="H11" data-href="javascript:setSelectValue('H11');" href="" alt="H11" title="H11" coords="371,127,322,78" shape="rect" />
+        <area id="H10" data-href="javascript:setSelectValue('H10');" href="" alt="H10" title="H10" coords="428,126,379,77" shape="rect" />
+        <area id="H9" data-href="javascript:setSelectValue('H9');" href="" alt="H9" title="H9" coords="483,126,434,77" shape="rect" />
+        <area id="H8" data-href="javascript:setSelectValue('H8');" href="" alt="H8" title="H8" coords="539,128,490,79" shape="rect" />
+        <area id="H7" data-href="javascript:setSelectValue('H7');" href="" alt="H7" title="H7" coords="594,127,545,78" shape="rect" />
+        <area id="H6" data-href="javascript:setSelectValue('H6');" href="" alt="H6" title="H6" coords="650,127,601,78" shape="rect" />
+        <area id="H5" data-href="javascript:setSelectValue('H5');" href="" alt="H5" title="H5" coords="704,126,655,77" shape="rect" />
+        <area id="H4" data-href="javascript:setSelectValue('H4');" href="" alt="H4" title="H4" coords="760,127,711,78" shape="rect" />
+        <area id="H3" data-href="javascript:setSelectValue('H3');" href="" alt="H3" title="H3" coords="816,126,767,77" shape="rect" />
+        <area id="H2" data-href="javascript:setSelectValue('H2');" href="" alt="H2" title="H2" coords="871,127,822,78" shape="rect" />
+        <area id="H1" data-href="javascript:setSelectValue('H1');" href="" alt="H1" title="H1" coords="926,127,877,78" shape="rect" />
+        <area id="G14" data-href="javascript:setSelectValue('G14');" href="" alt="G14" title="G14" coords="151,201,102,152" shape="rect" />
+        <area id="G13" data-href="javascript:setSelectValue('G13');" href="" alt="G13" title="G13" coords="206,201,157,152" shape="rect" />
+        <area id="G12" data-href="javascript:setSelectValue('G12');" href="" alt="G12" title="G12" coords="261,201,212,152" shape="rect" />
+        <area id="G11" data-href="javascript:setSelectValue('G11');" href="" alt="G11" title="G11" coords="317,201,268,152" shape="rect" />
+        <area id="G10" data-href="javascript:setSelectValue('G10');" href="" alt="G10" title="G10" coords="371,201,322,152" shape="rect" />
+        <area id="G9" data-href="javascript:setSelectValue('G9');" href="" alt="G9" title="G9" coords="428,201,379,152" shape="rect" />
+        <area id="G8" data-href="javascript:setSelectValue('G8');" href="" alt="G8" title="G8" coords="483,201,434,152" shape="rect" />
+        <area id="G7" data-href="javascript:setSelectValue('G7');" href="" alt="G7" title="G7" coords="539,201,490,152" shape="rect" />
+        <area id="G6" data-href="javascript:setSelectValue('G6');" href="" alt="G6" title="G6" coords="594,201,545,152" shape="rect" />
+        <area id="G5" data-href="javascript:setSelectValue('G5');" href="" alt="G5" title="G5" coords="650,201,601,152" shape="rect" />
+        <area id="G4" data-href="javascript:setSelectValue('G4');" href="" alt="G4" title="G4" coords="704,201,655,152" shape="rect" />
+        <area id="G3" data-href="javascript:setSelectValue('G3');" href="" alt="G3" title="G3" coords="761,201,712,152" shape="rect" />
+        <area id="G2" data-href="javascript:setSelectValue('G2');" href="" alt="G2" title="G2" coords="815,201,766,152" shape="rect" />
+        <area id="G1" data-href="javascript:setSelectValue('G1');" href="" alt="G1" title="G1" coords="871,201,822,152" shape="rect" />
+        <area id="F14" data-href="javascript:setSelectValue('F14');" href="" alt="F14" title="G14" coords="151,274,102,225" shape="rect" />
+        <area id="F13" data-href="javascript:setSelectValue('F13');" href="" alt="F13" title="G13" coords="206,274,157,225" shape="rect" />
+        <area id="F12" data-href="javascript:setSelectValue('F12');" href="" alt="F12" title="G12" coords="261,274,212,225" shape="rect" />
+        <area id="F11" data-href="javascript:setSelectValue('F11');" href="" alt="F11" title="G11" coords="317,274,268,225" shape="rect" />
+        <area id="F10" data-href="javascript:setSelectValue('F10');" href="" alt="F10" title="G10" coords="371,274,322,225" shape="rect" />
+        <area id="F9" data-href="javascript:setSelectValue('F9');" href="" alt="F9" title="F9" coords="428,274,379,225" shape="rect" />
+        <area id="F8" data-href="javascript:setSelectValue('F8');" href="" alt="F8" title="F8" coords="483,274,434,225" shape="rect" />
+        <area id="F7" data-href="javascript:setSelectValue('F7');" href="" alt="F7" title="F7" coords="539,274,490,225" shape="rect" />
+        <area id="F6" data-href="javascript:setSelectValue('F6');" href="" alt="F6" title="F6" coords="594,274,545,225" shape="rect" />
+        <area id="F5" data-href="javascript:setSelectValue('F5');" href="" alt="F5" title="F5" coords="650,274,601,225" shape="rect" />
+        <area id="F4" data-href="javascript:setSelectValue('F4');" href="" alt="F4" title="F4" coords="704,274,655,225" shape="rect" />
+        <area id="F3" data-href="javascript:setSelectValue('F3');" href="" alt="F3" title="F3" coords="761,274,712,225" shape="rect" />
+        <area id="F2" data-href="javascript:setSelectValue('F2');" href="" alt="F2" title="F2" coords="815,274,766,225" shape="rect" />
+        <area id="F1" data-href="javascript:setSelectValue('F1');" href="" alt="F1" title="F1" coords="871,274,822,225" shape="rect" />
+        <area id="E14" data-href="javascript:setSelectValue('E14');" href="" alt="E14" title="G14" coords="151,348,102,299" shape="rect" />
+        <area id="E13" data-href="javascript:setSelectValue('E13');" href="" alt="E13" title="G13" coords="206,348,157,299" shape="rect" />
+        <area id="E12" data-href="javascript:setSelectValue('E12');" href="" alt="E12" title="G12" coords="261,348,212,299" shape="rect" />
+        <area id="E11" data-href="javascript:setSelectValue('E11');" href="" alt="E11" title="G11" coords="317,348,268,299" shape="rect" />
+        <area id="E10" data-href="javascript:setSelectValue('E10');" href="" alt="E10" title="G10" coords="371,348,322,299" shape="rect" />
+        <area id="E9" data-href="javascript:setSelectValue('E9');" href="" alt="E9" title="E9" coords="428,348,379,299" shape="rect" />
+        <area id="E8" data-href="javascript:setSelectValue('E8');" href="" alt="E8" title="E8" coords="483,348,434,299" shape="rect" />
+        <area id="E7" data-href="javascript:setSelectValue('E7');" href="" alt="E7" title="E7" coords="539,348,490,299" shape="rect" />
+        <area id="E6" data-href="javascript:setSelectValue('E6');" href="" alt="E6" title="E6" coords="594,348,545,299" shape="rect" />
+        <area id="E5" data-href="javascript:setSelectValue('E5');" href="" alt="E5" title="E5" coords="650,348,601,299" shape="rect" />
+        <area id="E4" data-href="javascript:setSelectValue('E4');" href="" alt="E4" title="E4" coords="704,348,655,299" shape="rect" />
+        <area id="E3" data-href="javascript:setSelectValue('E3');" href="" alt="E3" title="E3" coords="761,348,712,299" shape="rect" />
+        <area id="E2" data-href="javascript:setSelectValue('E2');" href="" alt="E2" title="E2" coords="815,348,766,299" shape="rect" />
+        <area id="E1" data-href="javascript:setSelectValue('E1');" href="" alt="E1" title="E1" coords="871,348,822,299" shape="rect" />
+        <area id="D14" data-href="javascript:setSelectValue('D14');" href="" alt="D14" title="G14" coords="151,421,102,372" shape="rect" />
+        <area id="D13" data-href="javascript:setSelectValue('D13');" href="" alt="D13" title="G13" coords="206,421,157,372" shape="rect" />
+        <area id="D12" data-href="javascript:setSelectValue('D12');" href="" alt="D12" title="G12" coords="261,421,212,372" shape="rect" />
+        <area id="D11" data-href="javascript:setSelectValue('D11');" href="" alt="D11" title="G11" coords="317,421,268,372" shape="rect" />
+        <area id="D10" data-href="javascript:setSelectValue('D10');" href="" alt="D10" title="G10" coords="371,421,322,372" shape="rect" />
+        <area id="D9" data-href="javascript:setSelectValue('D9');" href="" alt="D9" title="D9" coords="428,421,379,372" shape="rect" />
+        <area id="D8" data-href="javascript:setSelectValue('D8');" href="" alt="D8" title="D8" coords="483,421,434,372" shape="rect" />
+        <area id="D7" data-href="javascript:setSelectValue('D7');" href="" alt="D7" title="D7" coords="539,421,490,372" shape="rect" />
+        <area id="D6" data-href="javascript:setSelectValue('D6');" href="" alt="D6" title="D6" coords="594,421,545,372" shape="rect" />
+        <area id="D5" data-href="javascript:setSelectValue('D5');" href="" alt="D5" title="D5" coords="650,421,601,372" shape="rect" />
+        <area id="D4" data-href="javascript:setSelectValue('D4');" href="" alt="D4" title="D4" coords="704,421,655,372" shape="rect" />
+        <area id="D3" data-href="javascript:setSelectValue('D3');" href="" alt="D3" title="D3" coords="761,421,712,372" shape="rect" />
+        <area id="D2" data-href="javascript:setSelectValue('D2');" href="" alt="D2" title="D2" coords="815,421,766,372" shape="rect" />
+        <area id="D1" data-href="javascript:setSelectValue('D1');" href="" alt="D1" title="D1" coords="871,421,822,372" shape="rect" />
+        <area id="C14" data-href="javascript:setSelectValue('C14');" href="" alt="C14" title="G14" coords="151,496,102,447" shape="rect" />
+        <area id="C13" data-href="javascript:setSelectValue('C13');" href="" alt="C13" title="G13" coords="206,496,157,447" shape="rect" />
+        <area id="C12" data-href="javascript:setSelectValue('C12');" href="" alt="C12" title="G12" coords="261,496,212,447" shape="rect" />
+        <area id="C11" data-href="javascript:setSelectValue('C11');" href="" alt="C11" title="G11" coords="317,496,268,447" shape="rect" />
+        <area id="C10" data-href="javascript:setSelectValue('C10');" href="" alt="C10" title="G10" coords="371,496,322,447" shape="rect" />
+        <area id="C9" data-href="javascript:setSelectValue('C9');" href="" alt="C9" title="C9" coords="428,496,379,447" shape="rect" />
+        <area id="C8" data-href="javascript:setSelectValue('C8');" href="" alt="C8" title="C8" coords="483,496,434,447" shape="rect" />
+        <area id="C7" data-href="javascript:setSelectValue('C7');" href="" alt="C7" title="C7" coords="539,496,490,447" shape="rect" />
+        <area id="C6" data-href="javascript:setSelectValue('C6');" href="" alt="C6" title="C6" coords="594,496,545,447" shape="rect" />
+        <area id="C5" data-href="javascript:setSelectValue('C5');" href="" alt="C5" title="C5" coords="650,496,601,447" shape="rect" />
+        <area id="C4" data-href="javascript:setSelectValue('C4');" href="" alt="C4" title="C4" coords="704,496,655,447" shape="rect" />
+        <area id="C3" data-href="javascript:setSelectValue('C3');" href="" alt="C3" title="C3" coords="761,496,712,447" shape="rect" />
+        <area id="C2" data-href="javascript:setSelectValue('C2');" href="" alt="C2" title="C2" coords="815,496,766,447" shape="rect" />
+        <area id="C1" data-href="javascript:setSelectValue('C1');" href="" alt="C1" title="C1" coords="871,496,822,447" shape="rect" />
+        <area id="B14" data-href="javascript:setSelectValue('B14');" href="" alt="B14" title="G14" coords="151,569,102,520" shape="rect" />
+        <area id="B13" data-href="javascript:setSelectValue('B13');" href="" alt="B13" title="G13" coords="206,569,157,520" shape="rect" />
+        <area id="B12" data-href="javascript:setSelectValue('B12');" href="" alt="B12" title="G12" coords="261,569,212,520" shape="rect" />
+        <area id="B11" data-href="javascript:setSelectValue('B11');" href="" alt="B11" title="G11" coords="317,569,268,520" shape="rect" />
+        <area id="B10" data-href="javascript:setSelectValue('B10');" href="" alt="B10" title="G10" coords="371,569,322,520" shape="rect" />
+        <area id="B9" data-href="javascript:setSelectValue('B9');" href="" alt="B9" title="B9" coords="428,569,379,520" shape="rect" />
+        <area id="B8" data-href="javascript:setSelectValue('B8');" href="" alt="B8" title="B8" coords="483,569,434,520" shape="rect" />
+        <area id="B7" data-href="javascript:setSelectValue('B7');" href="" alt="B7" title="B7" coords="539,569,490,520" shape="rect" />
+        <area id="B6" data-href="javascript:setSelectValue('B6');" href="" alt="B6" title="B6" coords="594,569,545,520" shape="rect" />
+        <area id="B5" data-href="javascript:setSelectValue('B5');" href="" alt="B5" title="B5" coords="650,569,601,520" shape="rect" />
+        <area id="B4" data-href="javascript:setSelectValue('B4');" href="" alt="B4" title="B4" coords="704,569,655,520" shape="rect" />
+        <area id="B3" data-href="javascript:setSelectValue('B3');" href="" alt="B3" title="B3" coords="761,569,712,520" shape="rect" />
+        <area id="B2" data-href="javascript:setSelectValue('B2');" href="" alt="B2" title="B2" coords="815,569,766,520" shape="rect" />
+        <area id="B1" data-href="javascript:setSelectValue('B1');" href="" alt="B1" title="B1" coords="871,569,822,520" shape="rect" />
+        <area id="A12" data-href="javascript:setSelectValue('A12');" href="" alt="A12" title="A12" coords="206,643,157,594" shape="rect" />
+        <area id="A11" data-href="javascript:setSelectValue('A11');" href="" alt="A11" title="A11" coords="261,643,212,594" shape="rect" />
+        <area id="A10" data-href="javascript:setSelectValue('A10');" href="" alt="A10" title="A10" coords="317,643,268,594" shape="rect" />
+        <area id="A9" data-href="javascript:setSelectValue('A9');" href="" alt="A9" title="A9" coords="371,643,322,594" shape="rect" />
+        <area id="A8" data-href="javascript:setSelectValue('A8');" href="" alt="A8" title="A8" coords="428,643,379,594" shape="rect" />
+        <area id="A7" data-href="javascript:setSelectValue('A7');" href="" alt="A7" title="A7" coords="483,643,434,594" shape="rect" />
+        <area id="A6" data-href="javascript:setSelectValue('A6');" href="" alt="A6" title="A6" coords="539,643,490,594" shape="rect" />
+        <area id="A5" data-href="javascript:setSelectValue('A5');" href="" alt="A5" title="A5" coords="594,643,545,594" shape="rect" />
+        <area id="A4" data-href="javascript:setSelectValue('A4');" href="" alt="A4" title="A4" coords="650,643,601,594" shape="rect" />
+        <area id="A3" data-href="javascript:setSelectValue('A3');" href="" alt="A3" title="A3" coords="704,643,655,594" shape="rect" />
+        <area id="A2" data-href="javascript:setSelectValue('A2');" href="" alt="A2" title="A2" coords="761,643,712,594" shape="rect" />
+    </map>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type='text/javascript'>
+        var codeMap = {
+            'H15': 'H15',
+            'H14': 'H14',
+            'H13': 'H13',
+            'H12': 'H12',
+            'H11': 'H11',
+            'H10': 'H10',
+            'H9': 'H9',
+            'H8': 'H8',
+            'H7': 'H7',
+            'H6': 'H6',
+            'H5': 'H5',
+            'H4': 'H4',
+            'H3': 'H3',
+            'H2': 'H2',
+            'H1': 'H1',
+            'G14': 'G14',
+            'G13': 'G13',
+            'G12': 'G12',
+            'G11': 'G11',
+            'G10': 'G10',
+            'G9': 'G9',
+            'G8': 'G8',
+            'G7': 'G7',
+            'G6': 'G6',
+            'G5': 'G5',
+            'G4': 'G4',
+            'G3': 'G3',
+            'G2': 'G2',
+            'G1': 'G1',
+            'F14': 'F14',
+            'F13': 'F13',
+            'F12': 'F12',
+            'F11': 'F11',
+            'F10': 'F10',
+            'F9': 'F9',
+            'F8': 'F8',
+            'F7': 'F7',
+            'F6': 'F6',
+            'F5': 'F5',
+            'F4': 'F4',
+            'F3': 'F3',
+            'F2': 'F2',
+            'F1': 'F1',
+            'E14': 'E14',
+            'E13': 'E13',
+            'E12': 'E12',
+            'E11': 'E11',
+            'E10': 'E10',
+            'E9': 'E9',
+            'E8': 'E8',
+            'E7': 'E7',
+            'E6': 'E6',
+            'E5': 'E5',
+            'E4': 'E4',
+            'E3': 'E3',
+            'E2': 'E2',
+            'E1': 'E1',
+            'D14': 'D14',
+            'D13': 'D13',
+            'D12': 'D12',
+            'D11': 'D11',
+            'D10': 'D10',
+            'D9': 'D9',
+            'D8': 'D8',
+            'D7': 'D7',
+            'D6': 'D6',
+            'D5': 'D5',
+            'D4': 'D4',
+            'D3': 'D3',
+            'D2': 'D2',
+            'D1': 'D1',
+            'C14': 'C14',
+            'C13': 'C13',
+            'C12': 'C12',
+            'C11': 'C11',
+            'C10': 'C10',
+            'C9': 'C9',
+            'C8': 'C8',
+            'C7': 'C7',
+            'C6': 'C6',
+            'C5': 'C5',
+            'C4': 'C4',
+            'C3': 'C3',
+            'C2': 'C2',
+            'C1': 'C1',
+            'B14': 'B14',
+            'B13': 'B13',
+            'B12': 'B12',
+            'B11': 'B11',
+            'B10': 'B10',
+            'B9': 'B9',
+            'B8': 'B8',
+            'B7': 'B7',
+            'B6': 'B6',
+            'B5': 'B5',
+            'B4': 'B4',
+            'B3': 'B3',
+            'B2': 'B2',
+            'B1': 'B1',
+            'A12': 'A12',
+            'A11': 'A11',
+            'A10': 'A10',
+            'A9': 'A9',
+            'A8': 'A8',
+            'A7': 'A7',
+            'A6': 'A6',
+            'A5': 'A5',
+            'A4': 'A4',
+            'A3': 'A3',
+            'A2': 'A2',
+        };
+
+        $(function () {
+            $('area').on('click', function () {
+                updateSelection($(this).attr('id'));
+            });
+            $('#selectBox').on('change', function () {
+                updateSelection($(this).val());
+            });
+        });
+
+        function updateSelection(code) {
+            $('#pictures').attr('src', codeMap[code]);
+            $('#selectBox').val(code);
+        }
+
+        $('map[name=image-map] area').on('click', function (e) {
+            //... snip ...
+            e.stopPropagation();
+            return false;
+        });
+    </script>
+
     <br />
     <input class="contact-button" type="submit" value="bestellen" />
     <br>
@@ -48,11 +414,12 @@
     <h2>@ViewData["FIRSTNAME"] @ViewData["LASTNAME"]</h2>
     <h2>@ViewData["EMAIL"]</h2>
     <h2>@ViewData["DATE"] @ViewData["TIME"]</h2>
+    <h2>Stoel: @ViewData["SEAT"]</h2>
         <h2>Eenmalige entreecode:<div id="myNumber"></div></h2>
     </div>
     <img src="@ViewData["MOVIE"]" class="order-image" style="border: 5px solid var(--clr-2);"/>
     <br><br>
-    <h5>Download de ticket hieronder</h5>
+    <h5>Download je ticket hieronder</h5>
     <input class="contact-button" type="button" id='but_screenshot' value="Download" onclick='screenshot();'>
 </div>
 <br>

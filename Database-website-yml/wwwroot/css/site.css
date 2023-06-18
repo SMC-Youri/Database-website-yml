@@ -369,3 +369,13 @@ body {
 .form-group {
     color: var(--clr-2)
 }
+
+.abc {
+    color: var(--clr-2)
+}
+
+.Imap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

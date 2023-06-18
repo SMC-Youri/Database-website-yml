@@ -44,7 +44,7 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
-        public IActionResult Ticket(string FIRSTNAME, string LASTNAME, string EMAIL, string TIME, string MOVIE, string DATE)
+        public IActionResult Ticket(string FIRSTNAME, string LASTNAME, string EMAIL, string TIME, string MOVIE, string DATE, string SEAT)
         {
             ViewData["FIRSTNAME"] = FIRSTNAME;
             ViewData["LASTNAME"] = LASTNAME;
@@ -52,6 +52,7 @@ namespace Database_website_yml.Controllers
             ViewData["TIME"] = TIME;
             ViewData["MOVIE"] = MOVIE;
             ViewData["DATE"] = DATE;
+            ViewData["SEAT"] = SEAT;
             return View();
         }
 
