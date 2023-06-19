@@ -44,6 +44,7 @@ namespace Database_website_yml.Controllers
             return View();
         }
 
+        [Route("Ticket")]
         public IActionResult Ticket(string FIRSTNAME, string LASTNAME, string EMAIL, string TIME, string MOVIE, string DATE, string SEAT)
         {
             ViewData["FIRSTNAME"] = FIRSTNAME;
